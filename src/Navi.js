@@ -11,7 +11,6 @@ import {
 	DropdownToggle,
 	DropdownMenu,
 	DropdownItem,
-	NavbarText,
 } from "reactstrap";
 
 const Navi = (props) => {
@@ -22,7 +21,7 @@ const Navi = (props) => {
 	return (
 		<div>
 			<Navbar color="light" light expand="md">
-				<NavbarBrand href="/">reactstrap</NavbarBrand>
+				<NavbarBrand href="/">Shop</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className="mr-auto" navbar>
@@ -30,7 +29,7 @@ const Navi = (props) => {
 							<NavLink href="/components/">Components</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="https://github.com/reactstrap/reactstrap">
+							<NavLink href="https://github.com/Sere27/react-shop">
 								GitHub
 							</NavLink>
 						</NavItem>
@@ -46,7 +45,6 @@ const Navi = (props) => {
 							</DropdownMenu>
 						</UncontrolledDropdown>
 					</Nav>
-					<NavbarText>Simple Text</NavbarText>
 				</Collapse>
 			</Navbar>
 		</div>
@@ -54,6 +52,3 @@ const Navi = (props) => {
 };
 
 export default Navi;
-//export = public gibi
-//componentden  inheritance oluyor
-//render = değişen veriye göre component yenilemeye yarıyor

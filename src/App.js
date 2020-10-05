@@ -31,6 +31,10 @@ export default class App extends Component {
 			.then((data) => this.setState({ products: data }));
 	};
 
+	addToCard = (product) => {
+		alert(product.productName);
+	};
+
 	render() {
 		let categoryInfo = { title: "Category List" };
 		let productInfo = { title: "Product List" };
@@ -38,7 +42,7 @@ export default class App extends Component {
 		return (
 			<div>
 				<Container>
-					<Navi></Navi>
+					<Navi />
 					<Row>
 						<Col xs="4">
 							<CategoryList
