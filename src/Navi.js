@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
 	Collapse,
 	Navbar,
@@ -43,7 +43,7 @@ export default class Navi extends React.Component {
 							</NavItem>
 							{/* cart ı app den aldık naviye ordan da cart summary gönderdik*/}
 							<CartSummary
-								removeFromCart={this.removeFromCart}
+								removeFromCart={this.props.removeFromCart}
 								cart={this.props.cart}
 							/>
 						</Nav>
